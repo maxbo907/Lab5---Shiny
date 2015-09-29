@@ -1,5 +1,6 @@
 library(httr)
 library(xlsx)
+library(Lab5)
 
 shinyServer(function(input, output){
 
@@ -10,6 +11,6 @@ shinyServer(function(input, output){
 
   output$main_plot<-renderPlot({
           party<-paste(input$party,"proc",sep=".")
-          plot(theData[which(theData$LÄN==lan),which(names(theData)==party)])
+          plot(theData[which(theData$LÄN==input$län),which(names(theData)==party)])
   })
 })
