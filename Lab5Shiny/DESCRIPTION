@@ -1,10 +1,10 @@
 Package: Lab5Shiny
-Title: Lab5---Shiny
+Title: Lab5Shiny
 Version: 1.0
-Authors@R: Niclas Lovsjö, Maxime Bonneau
+Authors: Niclas Lovsjo & Maxime Bonneau
 Description: Creates a simple shiny-app of election statistics
 License: GPL-2
-LazyData: true
+LazyData: false
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr

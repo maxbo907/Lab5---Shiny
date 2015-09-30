@@ -2,6 +2,7 @@ library(httr)
 library(xlsx)
 library(Lab5)
 library(XLConnect)
+library(shiny)
 shinyServer(function(input, output){
         selectedData <- reactive({
                 party<-paste(input$party,"proc",sep=".")

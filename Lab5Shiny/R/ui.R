@@ -2,6 +2,7 @@ library(httr)
 library(xlsx)
 library(Lab5)
 library(XLConnect)
+library(shiny)
 shinyUI(fluidPage(
       selectInput("lan",
                   label = "Choose a län",
