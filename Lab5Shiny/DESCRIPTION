@@ -3,7 +3,6 @@ Title: Lab5---Shiny
 Version: 1.0
 Authors@R: Niclas Lovsjö, Maxime Bonneau
 Description: Creates a simple shiny-app of election statistics
-Depends: R (>= 3.2.2)
 License: GPL-2
 LazyData: true
 Suggests: knitr,
