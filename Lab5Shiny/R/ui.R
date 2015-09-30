@@ -1,8 +1,17 @@
 library(httr)
 library(xlsx)
 library(Lab5)
-library(XLConnect)
 library(shiny)
+library(roxygen2)
+
+#'
+#' @title shinyUI
+#' @name shinyUI
+#' @param no parameters
+#' @description Creates the aesthetic part of the Shiny application
+#' @author Niclas Lovsjö & Maxime Bonneau
+#'
+
 shinyUI(fluidPage(
       selectInput("lan",
                   label = "Choose a län",
