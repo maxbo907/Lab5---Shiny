@@ -1,13 +1,4 @@
----
-title: "Vignette Title"
-author: "Vignette Author"
-date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{Vignette Title}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
----
+
 ---
 title: "Lab5Shiny"
 author: "Niclas Lovsjö, Maxime Bonneau"
@@ -26,6 +17,4 @@ Lab5Shiny is a project lab. shiny-app in the course adv.R-programming. It has a 
 _Function_
 
 The user can choose what district and what party she wants to see a plot of, from a scroll-down-list.
-
-_Examples_
 
