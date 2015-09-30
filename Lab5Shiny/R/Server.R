@@ -1,16 +1,20 @@
 library(httr)
 library(xlsx)
 library(Lab5)
-
+library(XLConnect)
 shinyServer(function(input, output){
+        selectedData <- reactive({
+                party<-paste(input$party,"proc",sep=".")
+                lan=input$lan
+                data.frame(kommun=theData$KOMMUN[which(theData$LÄN==lan)],
+                           votes=theData[which(theData$LÄN==lan),which(names(theData)==party)])
+        })
+        output$main_plot<-renderPlot({
+                plot(selectedData(),
+                     main=paste(input$party,"in",input$lan),
+                     ylab="% of votes",
+                     xlab=paste("Kommuner i",input$lan),
+                     type="p")
+        })
 
-#  lan<-lan_func(input$lan)
-  output$text1 <- renderText({
-          paste("input$party : ", input$party)
-  })
-
-  output$main_plot<-renderPlot({
-          party<-paste(input$party,"proc",sep=".")
-          plot(theData[which(theData$LÄN==input$län),which(names(theData)==party)])
-  })
 })

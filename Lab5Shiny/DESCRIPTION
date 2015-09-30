@@ -1,8 +1,11 @@
 Package: Lab5Shiny
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph)
+Title: Lab5---Shiny
+Version: 1.0
+Authors@R: Niclas Lovsjö, Maxime Bonneau
+Description: Creates a simple shiny-app of election statistics
 Depends: R (>= 3.2.2)
-License: What license is it under?
+License: GPL-2
 LazyData: true
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr

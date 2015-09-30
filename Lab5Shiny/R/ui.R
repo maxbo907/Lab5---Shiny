@@ -1,30 +1,17 @@
+
 shinyUI(fluidPage(
-  titlePanel("Election results"),
-  
-  sidebarLayout(
-    sidebarPanel(
-      helpText("Create graphs"),
-      
-      selectInput("län", 
+      selectInput("lan",
                   label = "Choose a län",
-                  choices = län1,
-                  selected = ""),
+                  choices = laan1,
+                  selected = "Värmlands län"),
 
-       
-      selectInput("kommun", 
-                  label = "Choose a kommun",
-                  choices = kommun1,
-                  selected = ""),
-      
-      checkboxGroupInput("party",
-                    label = "Choose parties",
-                    choices = party1
-                  )
-      ),
 
-    mainPanel(
-      plotOutput("main_plot"),
-      textOutput("text1")
-    )
-  )
-))
+      selectInput("party",
+                    label = "Choose a party",
+                    choices = party1,
+                        selected = "S"
+                  ),
+
+      plotOutput("main_plot")
+      # textOutput("text1"))
+  ))
