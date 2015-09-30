@@ -4,7 +4,7 @@ Version: 1.0
 Authors: Niclas Lovsjo & Maxime Bonneau
 Description: Creates a simple shiny-app of election statistics
 License: GPL-2
-LazyData: false
+LazyData: true
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
