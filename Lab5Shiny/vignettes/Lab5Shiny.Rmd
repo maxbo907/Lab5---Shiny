@@ -1,4 +1,3 @@
-
 ---
 title: "Lab5Shiny"
 author: "Niclas Lovsjö, Maxime Bonneau"
@@ -18,3 +17,7 @@ _Function_
 
 The user can choose what district and what party she wants to see a plot of, from a scroll-down-list.
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 93cca3171ef37197826dfc1bec12dd71a8c92dca

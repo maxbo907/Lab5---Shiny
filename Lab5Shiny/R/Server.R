@@ -2,6 +2,19 @@ library(httr)
 library(xlsx)
 library(Lab5)
 library(shiny)
+library(roxygen2)
+
+#'
+#' @title shinyServer
+#' @name shinyServer
+#' @param function(input, output) : an anonymous function taking count of what
+#'        is chosen by the user and gives the corresponding output
+#' @description depending of the selected län and party, an histogram is
+#'        given with the score of this party in the different kommuner of
+#'        this län.
+#' @author Niclas Lovsjö & Maxime Bonneau
+#'
+
 shinyServer(function(input, output){
         selectedData <- reactive({
                 party<-paste(input$party,"proc",sep=".")
