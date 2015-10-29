@@ -14,6 +14,7 @@ library(roxygen2)
 #'        this län.
 #' @author Niclas Lovsjö & Maxime Bonneau
 #'
+#hejhej
 
 shinyServer(function(input, output){
         selectedData <- reactive({
